@@ -33,7 +33,7 @@ import aiohttp
 class DBioClient:
     def __init__(self):
         self._session = aiohttp.ClientSession()
-        self.BASE_URL = "https://api.discord.bio/v1"
+        self.BASE_URL = "https://api.discord.bio/"
 
     async def api(self, path: str) -> tuple:
         if not path.startswith('/'):
